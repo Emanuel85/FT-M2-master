@@ -60,7 +60,7 @@ toDoShell.className="toDoShell"  //toDoShell.classList.add ('toDoShell') classLi
                                  // el nombre "toDoShell" a la etiqueta div ===> <div class="toDoShell"></div>
 const toDoText = document.createElement('span')
 toDoText.innerHTML=todo(description)
-toDoText.id=index
+toDoText.id="index" // cambiar por sin comillas
 if(todo().completeToDo() !== false) toDoText.className='compleText'
 toDoShell.appendChild(toDoText)
 return toDoShell
